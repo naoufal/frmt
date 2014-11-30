@@ -32,7 +32,7 @@ npm i --save frmt
 
 ### cardNumber(card_number)
 __Arguments__
-- `card_number` - The input card number to be formatted.
+- `card_number` - The inputted card number to be formatted.
 
 __Examples__
 ```js
