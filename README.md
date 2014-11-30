@@ -22,10 +22,10 @@ npm i --save frmt
 ## Documentation
 
 ### Functions
-- [`cardNumber`](/#cardnumber)
-- [`expiry`](/#expiry)
-- [`expiryToDate`](/#expirytodate)
-- [`cvc`](/#cvc)
+- [`cardNumber`](https://github.com/naoufal/frmt#cardnumbercard_number)
+- [`expiry`](https://github.com/naoufal/frmt#expiryexpiry_number)
+- [`expiryToDate`](https://github.com/naoufal/frmt#expirytodateformatted_expiry)
+- [`cvc`](https://github.com/naoufal/frmt#cvccvc-card_number)
 
 
 ## Functions
@@ -39,6 +39,7 @@ __Examples__
 frmt.cardNumber('4111111111111111'); // => 4111 1111 1111 1111
 frmt.cardNumber('378282246310005');  // => 3782 822463 10005
 ```
+<hr>
 
 ### expiry(expiry_number)
 __Arguments__
@@ -49,6 +50,7 @@ __Examples__
 frmt.expiry('1114');   // => 11 / 14
 frmt.expiry('112014'); // => 11 / 2014
 ```
+<hr>
 
 ### expiryToDate(formatted_expiry)
 __Arguments__
@@ -59,6 +61,7 @@ __Examples__
 frmt.expiryToDate('11 / 14');   // => 2014-11-01
 frmt.expiryToDate('11 / 2014'); // => 2014-11-01
 ```
+<hr>
 
 ### cvc(cvc, card_number)
 __Arguments__
