@@ -1,0 +1,36 @@
+{
+  "name": "frmt",
+  "version": "0.1.0",
+  "description": "A utility library to format strings",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha"
+  },
+  "keywords": [
+    "input",
+    "format",
+    "forms",
+    "field",
+    "credit card",
+    "expiry",
+    "cvc"
+  ],
+  "author": "Naoufal Kadhom <naoufalkadhom@gmail.com> (http://naoufal.com)",
+  "repository": "naoufal/frmt",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^2.4.1"
+  },
+  "devDependencies": {
+    "chai": "1.10.0",
+    "jshint": "2.5.10",
+    "mocha": "2.0.1"
+  },
+  "jshintConfig": {
+    "devel": true,
+    "node": true
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  }
+}
