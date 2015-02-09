@@ -37,5 +37,17 @@ describe('Date of Birth', function() {
 
     assert.strictEqual(frmt_dob, '09 / 09');
   });
+
+  it('should format date of birth to "YYYY-MM-DD" format', function() {
+    var frmt_expiry = frmt.dateOfBirthToDate('11 / 04 / 1988');
+
+    assert.strictEqual(frmt_expiry, '1988-04-11');
+  });
+
+  it('should not format date of birth if it isn\'t a formatted full date', function() {
+    var frmt_expiry = frmt.dateOfBirthToDate('11 / 0');
+
+    assert.instanceOf(frmt_expiry, Error);
+  });
 });
 

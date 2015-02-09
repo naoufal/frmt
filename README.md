@@ -55,7 +55,7 @@ frmt.expiry('112014'); // => 11 / 2014
 
 ### expiryToDate(formatted_expiry)
 __Arguments__
-- `formatted_expiry` - The output of the [expiry](/#expiry) method.
+- `formatted_expiry` - The output of the [expiry](/#expiryexpiry_number) method.
 
 __Examples__
 ```js
@@ -74,6 +74,7 @@ __Examples__
 frmt.cvc('1234', '378282246310005');  // => 1234
 frmt.cvc('1234', '4111111111111111'); // => 123
 ```
+<hr>
 
 ### dateOfBirth(dob)
 __Arguments__
@@ -83,3 +84,14 @@ __Examples__
 ```js
 frmt.dateOfBirth('11041988'); // => 11 / 04 / 1988
 ```
+<hr>
+
+### dateOfBirthToDate(formatted_dob)
+__Arguments__
+- `formatted_dob` - The output of the [dateOfBirth](/#dateofbirthdob) method.
+
+__Examples__
+```js
+frmt.dateOfBirthToDate('11 / 04 / 1988'); // => 1988-11-04
+```
+
