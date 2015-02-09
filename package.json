@@ -1,6 +1,6 @@
 {
   "name": "frmt",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A utility library to format strings",
   "main": "index.js",
   "scripts": {
