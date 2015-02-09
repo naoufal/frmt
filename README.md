@@ -5,13 +5,13 @@ _/_/_/_/  _/_/      _/    _/    _/    _/
  _/      _/        _/    _/    _/    _/
 _/      _/        _/    _/    _/      _/_/
 ```
-frmt.js
+frmt
 ====
 
 A utility library to format strings.
 
-[![Build Status](https://travis-ci.org/naoufal/frmt.svg?branch=master)](https://travis-ci.org/naoufal/frmt)
 [![NPM Version](https://img.shields.io/npm/v/frmt.svg)](https://www.npmjs.org/package/frmt)
+[![Build Status](https://travis-ci.org/naoufal/frmt.svg?branch=master)](https://travis-ci.org/naoufal/frmt)
 
 ## Install
 
@@ -26,6 +26,7 @@ npm i --save frmt
 - [`expiry`](https://github.com/naoufal/frmt#expiryexpiry_number)
 - [`expiryToDate`](https://github.com/naoufal/frmt#expirytodateformatted_expiry)
 - [`cvc`](https://github.com/naoufal/frmt#cvccvc-card_number)
+- [`dateOfBirth`](https://github.com/naoufal/frmt#dateofbirthdob)
 
 
 ## Functions
@@ -72,4 +73,13 @@ __Examples__
 ```js
 frmt.cvc('1234', '378282246310005');  // => 1234
 frmt.cvc('1234', '4111111111111111'); // => 123
+```
+
+### dateOfBirth(dob)
+__Arguments__
+- `dob` - The inputted date of birth to be formatted into `DD / MM / YYYY`.
+
+__Examples__
+```js
+frmt.dateOfBirth('11041988'); // => 11 / 04 / 1988
 ```

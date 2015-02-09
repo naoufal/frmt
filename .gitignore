@@ -6,3 +6,5 @@ node_modules
 *.log
 *.gz
 
+# files
+test.js

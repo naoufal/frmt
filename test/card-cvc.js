@@ -1,8 +1,6 @@
 var frmt   = require('../index');
 var assert = require('chai').assert;
 
-
-
 describe('Card CVC', function() {
   var VISA = '4111111111111111';
   var AMEX = '378282246310005';
