@@ -1,8 +1,6 @@
 var frmt   = require('../index');
 var assert = require('chai').assert;
 
-
-
 describe('Card Expiry', function() {
   var EXPIRY_2 = '11';
   var EXPIRY_4 = '1114';
@@ -14,13 +12,13 @@ describe('Card Expiry', function() {
     assert.strictEqual(frmt_expiry, '11');
   });
 
-  it('should format 4 digit dates to MM / YY format', function() {
+  it('should format 4 digit dates to "MM / YY" format', function() {
     var frmt_expiry = frmt.expiry(EXPIRY_4);
 
     assert.strictEqual(frmt_expiry, '11 / 14');
   });
 
-  it('should format 6 digit dates to MM / YYYY format', function() {
+  it('should format 6 digit dates to "MM / YYYY" format', function() {
     var frmt_expiry = frmt.expiry(EXPIRY_6);
 
     assert.strictEqual(frmt_expiry, '11 / 2014');
@@ -32,13 +30,13 @@ describe('Card Expiry', function() {
     assert.instanceOf(frmt_expiry, Error);
   });
 
-  it('should format 4 digit expiry to YYYY-MM-DD format', function() {
+  it('should format 4 digit expiry to "YYYY-MM-DD" format', function() {
     var frmt_expiry = frmt.expiryToDate('11 / 14');
 
     assert.strictEqual(frmt_expiry, '2014-11-01');
   });
 
-  it('should format 6 digit expiry to YYYY-MM-DD format', function() {
+  it('should format 6 digit expiry to "YYYY-MM-DD" format', function() {
     var frmt_expiry = frmt.expiryToDate('11 / 2014');
 
     assert.strictEqual(frmt_expiry, '2014-11-01');

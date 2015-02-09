@@ -1,8 +1,6 @@
 var frmt   = require('../index');
 var assert = require('chai').assert;
 
-
-
 describe('Card Number', function() {
   var BAD_CC = '4111 abcd !@#$ %^&*';
 
