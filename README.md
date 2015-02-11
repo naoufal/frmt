@@ -12,7 +12,7 @@ A utility library to format strings.
 
 [![NPM Version](https://img.shields.io/npm/v/frmt.svg)](https://www.npmjs.org/package/frmt)
 [![Build Status](https://travis-ci.org/naoufal/frmt.svg?branch=master)](https://travis-ci.org/naoufal/frmt)
-
+[![Code Climate](https://codeclimate.com/github/naoufal/frmt/badges/gpa.svg)](https://codeclimate.com/github/naoufal/frmt)
 ## Install
 
 ```shell
